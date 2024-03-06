@@ -1,12 +1,24 @@
-# bookbot - A book analysis tool
+# Bookbot - A book analysis tool
 
-This Python project analyzes the text of a book, providing insights into word count and letter frequencies.
+## Introduction
+Bookbot offers several features for analyzing text files, including counting words and determining the frequency of each letter.
 
-## **Features**
+_Note: This is a work in progess, i.e., really bad code_
 
-- Calculates the total number of words in the provided book.
-- Generates a frequency report of all letters used in the text.
-- Sorts the letter frequency report in descending order.
-- Presents the results in a neatly formatted output.
+## Features
+1. **Word Count Calculation**: The script calculates the total number of words present in the provided text file.
+   
+2. **Letter Frequency Analysis**: The script generates a report detailing the frequency of each letter in the text.
 
-_Note: This is a work in progress._
+3. **Sorting by Frequency**: The script sorts the letter frequency dictionary in descending order based on the frequency of each letter.
+
+## Usage
+1. Run the script.
+2. Input the file path of the desired text file when prompted.
+3. The script will analyze the text and print a report containing the word count and the frequency of each letter.
+
+## Example
+```python
+python3 main.py
+
+Please enter the file path of your desired book: example_book.txt
