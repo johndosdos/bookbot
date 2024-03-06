@@ -14,7 +14,7 @@ def get_book_letter_freq(book: str) -> dict[str, int]:
     char_list = sorted(book.lower())
 
     for char in char_list:
-        if "a" <= char <= "z":
+        if char.isalpha():
             letter_freq_dict[char] = letter_freq_dict.get(char, 0) + 1
 
     return letter_freq_dict
