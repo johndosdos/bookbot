@@ -1,3 +1,14 @@
+def get_book_letter_freq(book: str) -> dict[str, int]:
+    letter_count_dict: dict[str, int] = {}
+    char_list = sorted(book.lower())
+
+    for char in char_list:
+        if "a" <= char <= "z":
+            letter_count_dict[char] = letter_count_dict.get(char, 0) + 1
+
+    return letter_count_dict
+
+
 def get_book_word_count(book: str) -> int:
     string_list = book.split()
 
