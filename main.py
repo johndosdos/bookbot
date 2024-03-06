@@ -1,9 +1,14 @@
-def get_book_word_count() -> int:
+def get_book_word_count(book: str) -> int:
+    string_list = book.split()
+
+    return len(string_list)
+
+
+def open_book():
     with open("books/frankenstein.txt") as file:
         file_contents = file.read()
-        string_list = file_contents.split()
 
-        return len(string_list)
+        return file_contents
 
 
 def main():
