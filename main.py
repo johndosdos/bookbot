@@ -1,3 +1,14 @@
+def print_report(word_count: int, letter_freq: dict[str, int]):
+    print("\n")
+    print("----------------File Report----------------")
+    print(f"There are {word_count} words found in this book.")
+    print("\n")
+    for item in letter_freq:
+        print(f"The character '{item}' is repeated {letter_freq[item]} times.")
+    print("----------------End----------------")
+    print("\n")
+
+
 def get_book_letter_freq(book: str) -> dict[str, int]:
     letter_freq_dict: dict[str, int] = {}
     char_list = sorted(book.lower())
@@ -27,10 +38,7 @@ def main():
     word_count = get_book_word_count(book)
     letter_count = get_book_letter_freq(book)
 
-    print("\n\n----------------------------------")
-    print(f"Number of words: {word_count} words\n")
-    print(f"Frequency of letters:\n{letter_count}")
-    print("----------------------------------\n\n")
+    print_report(word_count, letter_count)
 
 
 main()
